@@ -12,11 +12,9 @@
 #define METAW 3
 #define UTILS 4
 
-
 / {
     keymap {
         compatible = "zmk,keymap";
-		
         default_layer {
                 // Regular macOS bottom row on the left, custom on the right; switches to metamac layer
                 // ------------------------------------------------------------------------------------------------
@@ -61,11 +59,11 @@
                 // F-keys, navigation, media controls, syskeys, Alt on Space
             bindings = <
                 &none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&kp C_PREV 		&kp C_PP 		&kp C_NEXT
-				&none	 		&kp F1 			&kp F2 			&kp F3 			&kp F4 			&kp F5 			&kp F6 			&kp F7 			&kp F8 			&kp F9 			&kp F10 		&kp F11 		&kp F12 		&kp DEL							&trans
-                &none 			&kp C_VOL_DN 	&kp K_MUTE 		&kp C_VOL_UP 	&none 			&none 			&none 			&kp PG_UP 		&kp UP 			&kp PG_DN 		&kp PSCRN 		&kp SLCK 		&kp PAUSE_BREAK &kp CAPS						&trans
-                &trans 			&kp C_PREV 		&kp C_PP 		&kp C_NEXT 		&none 			&none 			&kp HOME 		&kp LEFT 		&kp DOWN 		&kp RIGHT 		&kp INS 		&kp DEL 						&none							&trans
-                &trans 							&none 			&none 			&none 			&none 			&none 			&kp END 		&none 			&none 			&none 			&none 			&trans							&trans			&trans
-                &trans 			&trans 			&trans 															&kp LALT 														&trans 			&mo UTILS 		&trans 			&trans			&trans			&trans
+				&none	 		&kp F1 			&kp F2 			&kp F3 			&kp F4 			&kp F5 			&kp F6 			&kp F7 			&kp F8 			&kp F9 			&kp F10 		&kp F11 		&kp F12 		&kp DEL							&none
+                &none 			&kp C_VOL_DN 	&kp K_MUTE 		&kp C_VOL_UP 	&none 			&none 			&none 			&kp PG_UP 		&kp UP 			&kp PG_DN 		&kp PSCRN 		&kp SLCK 		&kp PAUSE_BREAK &kp CAPS						&none
+                &trans 			&kp C_PREV 		&kp C_PP 		&kp C_NEXT 		&none 			&none 			&kp HOME 		&kp LEFT 		&kp DOWN 		&kp RIGHT 		&kp INS 		&kp DEL 						&none							&none
+                &trans 							&none 			&none 			&none 			&none 			&none 			&kp END 		&none 			&none 			&none 			&none 			&trans							&none			&none
+                &trans 			&trans 			&trans 															&kp LALT 														&trans 			&mo UTILS 		&trans 			&none			&none			&none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -73,11 +71,11 @@
                 // F-keys, navigation, media controls, syskeys, Ctrl on Space
             bindings = <
 				&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&kp C_PREV 		&kp C_PP 		&kp C_NEXT
-                &none	 		&kp F1 			&kp F2 			&kp F3 			&kp F4 			&kp F5 			&kp F6 			&kp F7 			&kp F8 			&kp F9 			&kp F10 		&kp F11 		&kp F12 		&kp DEL							&trans
-                &none 			&kp C_VOL_DN 	&kp K_MUTE 		&kp C_VOL_UP 	&none 			&none 			&none 			&kp PG_UP 		&kp UP 			&kp PG_DN 		&kp PSCRN 		&kp SLCK 		&kp PAUSE_BREAK &kp CAPS						&trans
-                &trans 			&kp C_PREV 		&kp C_PP 		&kp C_NEXT 		&none 			&none 			&kp HOME 		&kp LEFT 		&kp DOWN 		&kp RIGHT 		&kp INS 		&kp DEL 						&none							&trans
-                &trans 							&none 			&none 			&none 			&none 			&none 			&kp END 		&none 			&none 			&none 			&none 			&trans							&trans			&trans
-                &trans 			&trans 			&trans 															&kp LCTRL 														&trans 			&mo UTILS 		&trans 			&trans			&trans			&trans
+                &none	 		&kp F1 			&kp F2 			&kp F3 			&kp F4 			&kp F5 			&kp F6 			&kp F7 			&kp F8 			&kp F9 			&kp F10 		&kp F11 		&kp F12 		&kp DEL							&none
+                &none 			&kp C_VOL_DN 	&kp K_MUTE 		&kp C_VOL_UP 	&none 			&none 			&none 			&kp PG_UP 		&kp UP 			&kp PG_DN 		&kp PSCRN 		&kp SLCK 		&kp PAUSE_BREAK &kp CAPS						&none
+                &trans 			&kp C_PREV 		&kp C_PP 		&kp C_NEXT 		&none 			&none 			&kp HOME 		&kp LEFT 		&kp DOWN 		&kp RIGHT 		&kp INS 		&kp DEL 						&none							&none
+                &trans 							&none 			&none 			&none 			&none 			&none 			&kp END 		&none 			&none 			&none 			&none 			&trans							&none			&none
+                &trans 			&trans 			&trans 															&kp LCTRL 														&trans 			&mo UTILS 		&trans 			&none			&none			&none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -89,10 +87,9 @@
                 &none 			&none 			&tog WIN 		&none 			&none 			&none 			&none 			&out OUT_USB 	&none 			&ext_power EP_OFF &ext_power EP_ON &none 		&none 			&none							&none
                 &trans 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 							&bootloader						&none
                 &none 							&none 			&none 			&bt BT_CLR 		&none 			&out OUT_BLE 	&none 			&none 			&none 			&none 			&none 			&none							&none			&none
-                &none 			&none 			&none 															&kp C_PWR 														&none 			&none	 		&trans 			&trans			&none			&none
+                &none 			&none 			&none 															&kp C_PWR 														&none 			&trans	 		&trans 			&none			&none			&none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
-
     };
 };
