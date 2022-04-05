@@ -10,7 +10,7 @@
 #define WIN 1
 #define METAM 2
 #define METAW 3
-#define UTILS 4
+#define UTIL 4
 
 / {
     keymap {
@@ -63,7 +63,7 @@
                 &none 			&kp C_VOL_DN 	&kp K_MUTE 		&kp C_VOL_UP 	&none 			&none 			&none 			&kp PG_UP 		&kp UP 			&kp PG_DN 		&kp PSCRN 		&kp SLCK 		&kp PAUSE_BREAK &kp CAPS						&kp KP_DIVIDE
                 &trans 			&kp C_PREV 		&kp C_PP 		&kp C_NEXT 		&none 			&none 			&kp HOME 		&kp LEFT 		&kp DOWN 		&kp RIGHT 		&kp INS 		&kp DEL 						&kp KP_ENTER					&kp KP_MULTIPLY
                 &trans 							&none 			&none 			&none 			&none 			&none 			&kp END 		&none 			&none 			&none 			&none 			&trans							&none			&kp KP_DOT
-                &trans 			&trans 			&trans 															&kp LALT 														&trans 			&mo UTILS 		&trans 			&none			&none			&none
+                &trans 			&trans 			&trans 															&kp LALT 														&trans 			&mo UTIL 		&trans 			&none			&none			&none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -75,19 +75,19 @@
                 &none 			&kp C_VOL_DN 	&kp K_MUTE 		&kp C_VOL_UP 	&none 			&none 			&none 			&kp PG_UP 		&kp UP 			&kp PG_DN 		&kp PSCRN 		&kp SLCK 		&kp PAUSE_BREAK &kp CAPS						&kp KP_DIVIDE
                 &trans 			&kp C_PREV 		&kp C_PP 		&kp C_NEXT 		&none 			&none 			&kp HOME 		&kp LEFT 		&kp DOWN 		&kp RIGHT 		&kp INS 		&kp DEL 						&none							&kp KP_MULTIPLY
                 &trans 							&none 			&none 			&none 			&none 			&none 			&kp END 		&none 			&none 			&none 			&none 			&trans							&none			&kp KP_DOT
-                &trans 			&trans 			&trans 															&kp LCTRL 														&trans 			&mo UTILS 		&trans 			&none			&none			&none
+                &trans 			&trans 			&trans 															&kp LCTRL 														&trans 			&mo UTIL 		&trans 			&none			&none			&none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
-        utils_layer {
+        util_layer {
                 // Hardware functions, layer toggles
             bindings = <
-				&none 			&none 			&none 			&none 			&none 			&none 			&rgb_ug RGB_EFR	&rgb_ug RGB_EFF	&rgb_ug RGB_SPD	&rgb_ug RGB_SPI	&rgb_ug RGB_TOG	&rgb_ug RGB_BRD	&rgb_ug RGB_BRI	&none			&none			&none
+				&none 			&none 			&none 			&none 			&none 			&none 			&none	        &none	        &none	        &none	        &none	        &none	        &none	        &none			&none			&none
                 &none 			&bt BT_SEL 0 	&bt BT_SEL 1 	&bt BT_SEL 2 	&bt BT_SEL 3 	&bt BT_SEL 4 	&none 			&none 			&none 			&none 			&bl BL_TOG 		&bl BL_DEC 		&bl BL_INC 		&reset							&none
-                &none 			&none 			&tog WIN 		&none 			&none 			&none 			&none 			&out OUT_USB 	&none 			&ext_power EP_OFF &ext_power EP_ON &none 		&none 			&none							&none
-                &trans 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 							&bootloader						&none
-                &none 							&none 			&none 			&bt BT_CLR 		&none 			&out OUT_BLE 	&none 			&none 			&none 			&none 			&none 			&none							&none			&none
-                &none 			&none 			&none 															&kp C_PWR 														&none 			&trans	 		&trans 			&none			&none			&none
+                &none 			&none 			&tog WIN 		&none 			&none 			&none 			&none 			&out OUT_USB 	&none 			&ext_power EP_OFF &ext_power EP_ON &none 		&none 			&none							&rgb_ug RGB_SPI
+                &trans 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 							&bootloader						&rgb_ug RGB_SPD
+                &none 							&none 			&none 			&bt BT_CLR 		&none 			&out OUT_BLE 	&none 			&none 			&none 			&none 			&none 			&none							&rgb_ug RGB_BRI	&rgb_ug RGB_TOG
+                &none 			&none 			&none 															&kp C_PWR 														&none 			&trans	 		&trans 			&rgb_ug RGB_EFR	&rgb_ug RGB_BRD	&rgb_ug RGB_EFF
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
