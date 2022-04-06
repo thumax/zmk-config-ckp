@@ -29,6 +29,6 @@ config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
 
 config ZMK_KEYBOARD_NAME
-	default "BT75"
+	default "thumax75"
 
 endif # BOARD_BT75
