@@ -27,7 +27,7 @@
                 // ------------------------------------------------------------------------------------------------
             bindings = <
 				&kp ESC			&kp F1			&kp F2			&kp F3			&kp F4			&kp F5			&kp F6			&kp F7			&kp F8			&kp F9			&kp F10			&kp F11			&kp F12			&kp C_VOL_DN	&kp K_MUTE		&kp C_VOL_UP
-                &kp GRAVE 		&kp N1 			&kp N2 			&kp N3 			&kp N4 			&kp N5 			&kp N6 			&kp N7 			&kp N8 			&kp N9 			&kp N0 			&kp MINUS 		&kp EQUAL 		&kp BSPC						&kp HOME
+                &kp GRAVE 		&kp N1 			&kp N2 			&kp N3 			&kp N4 			&kp N5 			&kp N6 			&kp N7 			&kp N8 			&kp N9 			&kp N0 			&kp MINUS 		&kp EQUAL 		&kp BSPC		&kp DEL			&kp HOME
                 &kp TAB 		&kp Q 			&kp W 			&kp E 			&kp R 			&kp T 			&kp Y 			&kp U 			&kp I 			&kp O 			&kp P 			&kp LBKT 		&kp RBKT 		&kp BSLH						&kp PG_UP
                 &mo METAM 		&kp A 			&kp S 			&kp D 			&kp F 			&kp G 			&kp H 			&kp J 			&kp K 			&kp L 			&kp SEMI 		&kp SQT 						&kp RET							&kp PG_DN
                 &kp LSHFT 						&kp Z 			&kp X 			&kp C 			&kp V 			&kp B 			&kp N 			&kp M 			&kp COMMA 		&kp DOT 		&kp FSLH 		&kp RSHFT						&kp UP			&kp END
@@ -47,7 +47,7 @@
                 // ------------------------------------------------------------------------------------------------
             bindings = <
                 &trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans			&trans 			&trans 			&trans
-				&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans							&trans
+				&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans
                 &trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans							&trans
                 &mo METAW 		&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 							&trans							&trans
                 &trans 							&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans 			&trans							&trans			&trans
@@ -59,7 +59,7 @@
                 // F-keys, navigation, media controls, syskeys, Alt on Space
             bindings = <
                 &none 			&kp F13			&kp F14			&kp F15			&kp F16			&kp F17			&kp F18			&kp F19			&kp F20			&kp F21			&kp F22			&kp F23			&kp F24			&kp C_PREV 		&kp C_PP 		&kp C_NEXT
-				&none	 		&kp KP_N1 		&kp KP_N2 		&kp KP_N3 		&kp KP_N4 		&kp KP_N5 		&kp KP_N6 		&kp KP_N7 		&kp KP_N8 		&kp KP_N9 		&kp KP_N0 		&kp KP_MINUS 	&kp KP_PLUS 	&kp DEL							&kp KP_NUM
+				&none	 		&kp KP_N1 		&kp KP_N2 		&kp KP_N3 		&kp KP_N4 		&kp KP_N5 		&kp KP_N6 		&kp KP_N7 		&kp KP_N8 		&kp KP_N9 		&kp KP_N0 		&kp KP_MINUS 	&kp KP_PLUS 	&kp DEL 		&none 			&kp KP_NUM
                 &none 			&kp C_VOL_DN 	&kp K_MUTE 		&kp C_VOL_UP 	&none 			&none 			&none 			&kp PG_UP 		&kp UP 			&kp PG_DN 		&kp PSCRN 		&kp SLCK 		&kp PAUSE_BREAK &kp CAPS						&kp KP_DIVIDE
                 &trans 			&kp C_PREV 		&kp C_PP 		&kp C_NEXT 		&none 			&none 			&kp HOME 		&kp LEFT 		&kp DOWN 		&kp RIGHT 		&kp INS 		&kp DEL 						&kp KP_ENTER					&kp KP_MULTIPLY
                 &trans 							&none 			&none 			&none 			&none 			&none 			&kp END 		&none 			&none 			&none 			&none 			&trans							&none			&kp KP_DOT
@@ -71,7 +71,7 @@
                 // F-keys, navigation, media controls, syskeys, Ctrl on Space
             bindings = <
 				&none 			&kp F13			&kp F14			&kp F15			&kp F16			&kp F17			&kp F18			&kp F19			&kp F20			&kp F21			&kp F22			&kp F23			&kp F24			&kp C_PREV 		&kp C_PP 		&kp C_NEXT
-                &none	 		&kp KP_N1 		&kp KP_N2 		&kp KP_N3 		&kp KP_N4 		&kp KP_N5 		&kp KP_N6 		&kp KP_N7 		&kp KP_N8 		&kp KP_N9 		&kp KP_N0 		&kp KP_MINUS 	&kp KP_PLUS 	&kp DEL							&kp KP_NUM
+                &none	 		&kp KP_N1 		&kp KP_N2 		&kp KP_N3 		&kp KP_N4 		&kp KP_N5 		&kp KP_N6 		&kp KP_N7 		&kp KP_N8 		&kp KP_N9 		&kp KP_N0 		&kp KP_MINUS 	&kp KP_PLUS 	&kp DEL			&none			&kp KP_NUM
                 &none 			&kp C_VOL_DN 	&kp K_MUTE 		&kp C_VOL_UP 	&none 			&none 			&none 			&kp PG_UP 		&kp UP 			&kp PG_DN 		&kp PSCRN 		&kp SLCK 		&kp PAUSE_BREAK &kp CAPS						&kp KP_DIVIDE
                 &trans 			&kp C_PREV 		&kp C_PP 		&kp C_NEXT 		&none 			&none 			&kp HOME 		&kp LEFT 		&kp DOWN 		&kp RIGHT 		&kp INS 		&kp DEL 						&none							&kp KP_MULTIPLY
                 &trans 							&none 			&none 			&none 			&none 			&none 			&kp END 		&none 			&none 			&none 			&none 			&trans							&none			&kp KP_DOT
@@ -83,7 +83,7 @@
                 // Hardware functions, layer toggles
             bindings = <
 				&none 			&none 			&none 			&none 			&none 			&none 			&none	        &none	        &none	        &none	        &none	        &none	        &none	        &rgb_ug RGB_SPD	&rgb_ug RGB_SPI	&rgb_ug RGB_HUI
-                &none 			&bt BT_SEL 0 	&bt BT_SEL 1 	&bt BT_SEL 2 	&bt BT_SEL 3 	&bt BT_SEL 4 	&none 			&none 			&none 			&none 			&bl BL_TOG 		&bl BL_DEC 		&bl BL_INC 		&reset							&rgb_ug RGB_HUD
+                &none 			&bt BT_SEL 0 	&bt BT_SEL 1 	&bt BT_SEL 2 	&bt BT_SEL 3 	&bt BT_SEL 4 	&none 			&none 			&none 			&none 			&bl BL_TOG 		&bl BL_DEC 		&bl BL_INC 		&reset			&none			&rgb_ug RGB_HUD
                 &none 			&none 			&tog WIN 		&none 			&none 			&none 			&none 			&out OUT_USB 	&none 			&none           &none           &none 		    &none 			&none							&rgb_ug RGB_SAI
                 &trans 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 			&none 							&bootloader						&rgb_ug RGB_SAD
                 &none 							&none 			&none 			&bt BT_CLR 		&none 			&out OUT_BLE 	&none 			&none 			&none 			&none 			&none 			&rgb_ug RGB_COLOR_HSB(29,27,100)&rgb_ug RGB_BRI	&rgb_ug RGB_TOG
