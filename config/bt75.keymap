@@ -33,7 +33,7 @@
                 &kp LSHFT 						&kp Z 			&kp X 			&kp C 			&kp V 			&kp B 			&kp N 			&kp M 			&kp COMMA 		&kp DOT 		&kp FSLH 		&kp RSHFT						&kp UP			&kp END
                 &kp LCTRL 		&kp LALT 		&kp LCMD														&kp SPACE 														&kp RALT 		&kp RCMD 		&mo METAM 		&kp LEFT		&kp DOWN		&kp RIGHT
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LS(LA(C_VOL_UP)) LS(LA(C_VOL_DN))>;
         };
         win_layer {
                 // Regular IBM/Windows bottom row; switches to metawin layer
