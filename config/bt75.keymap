@@ -89,7 +89,7 @@
                 &none 							&none 			&none 			&bt BT_CLR 		&none 			&out OUT_BLE 	&none 			&none 			&none 			&none 			&none 			&rgb_ug RGB_COLOR_HSB(29,27,100)&rgb_ug RGB_BRI	&rgb_ug RGB_TOG
                 &none 			&none 			&none 															&kp C_PWR 														&none 			&trans	 		&trans 			&rgb_ug RGB_EFR	&rgb_ug RGB_BRD	&rgb_ug RGB_EFF
             >;
-            sensor-bindings = <&inc_dec_kp RGB_HUI RGB_HUD>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
