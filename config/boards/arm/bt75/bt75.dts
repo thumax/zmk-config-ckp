@@ -95,7 +95,7 @@
 		label = "ENCODER_TWO";
 		a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <4>;
+		resolution = <2>;
 		status = "okay";
 	};
 	encoder_3: encoder_3 {
