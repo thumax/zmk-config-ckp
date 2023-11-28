@@ -89,7 +89,7 @@
         util_layer {
                 // Hardware functions, layer toggles
             bindings = <
-                 &none 			&bt BT_SEL 0 	&bt BT_SEL 1 	&bt BT_SEL 2 	&bt BT_SEL 3 	&bt BT_SEL 4 	&none 			&none 			&none 			&none 			&bl BL_TOG 		&bl BL_DEC 		&bl BL_INC 		&reset
+                 &none 			&bt BT_SEL 0 	&bt BT_SEL 1 	&bt BT_SEL 2 	&bt BT_SEL 3 	&bt BT_SEL 4 	&none 			&none 			&none 			&none 			&bl BL_TOG 		&bl BL_DEC 		&bl BL_INC 		&sys_reset
                  &none   		&none 			&tog WIN 		&none 			&none 			&none 			&none 			&out OUT_USB 	&none 			&ext_power EP_OFF &ext_power EP_ON &none 		&none 			&none
                  &trans 		&none 			&none 			&none 			&none 			&none           &none 		    &none 			&none 			&none 			&none 			&none 							&bootloader
                  &none   						&none 			&none 			&bt BT_CLR 		&none 			&out OUT_BLE 	&none 			&none 			&none 			&none 			&none 			&none
