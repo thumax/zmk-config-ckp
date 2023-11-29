@@ -16,11 +16,11 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_z {
+        combo_capsword {
             timeout-ms = <100>;
             key-positions = <41 52>;
             layers = <0 1>;
-            bindings = <&kp X>;
+            bindings = <&caps_word>;
         };
     };
     keymap {
