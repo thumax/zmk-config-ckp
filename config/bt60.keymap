@@ -18,9 +18,9 @@
         compatible = "zmk,combos";
         combo_z {
             timeout-ms = <50>;
-            key-positions = <38 50>;
+            key-positions = <1 50>;
             layers = <0 1>;
-            bindings = <&kp SEMI>;
+            bindings = <&kp BSLH>;
         };
     };
     keymap {
