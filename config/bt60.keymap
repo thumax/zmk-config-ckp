@@ -19,8 +19,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "CAPS_SHIFT";
             #binding-cells = <0>;
-            bindings = <&caps_word>, <&kp RSHFT>;
-            mods = <(MOD_LSFT)>;
+            bindings = <&kp X>, <&kp RSHFT>;
+            mods = <MOD_LSFT>;
         };
     };
     keymap {
